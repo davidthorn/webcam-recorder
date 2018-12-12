@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="."/>
+        <title>Webcam Recorder</title>
+        <link href="./layout.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="wrapper" class="wrapper"></div>
+
+        <script>
+            const electron = require('electron');
+            const webcamController = require('./Webcam');
+            const webcam = new webcamController.WebcamView();
+            webcam.render();
+        </script>
+
+    </body>
+</html>

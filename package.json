@@ -2,7 +2,7 @@
     "name": "webcam-recorder",
     "version": "1.0.0",
     "description": "An Electron application which captures your webcam and displays it in a window. Nothing special.",
-    "main": "src/main.ts",
+    "main": "src/main.js",
     "scripts": {
         "pretest": "tsc",
         "test": "nyc mocha",
@@ -24,11 +24,14 @@
     },
     "devDependencies": {
         "@types/chai": "^4.1.7",
+        "@types/electron": "^1.6.10",
         "@types/fs-extra": "^5.0.4",
         "@types/mocha": "^5.2.5",
         "@types/node": "^10.12.12",
         "@types/strip-json-comments": "0.0.30",
         "chai": "^4.2.0",
+        "electron": "^3.0.11",
+        "electron-packager": "^13.0.0",
         "fs-extra": "^7.0.1",
         "mocha": "^5.2.0",
         "mocha-typescript": "^1.1.17",
